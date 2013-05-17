@@ -1,114 +1,29 @@
-﻿Build started 5/17/2013 11:12:12 AM.
-     1>Project "C:\Users\Student\Documents\Visual Studio 2010\Projects\AquariumClient\AquariumClient.vcxproj" on node 2 (build target(s)).
+﻿Build started 5/17/2013 3:33:49 PM.
+     1>Project "C:\Users\Student\Documents\GitHub\Colin-AIE-Term-Project\AquariumClient\AquariumClient.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
-         Creating "Debug\AquariumClient.unsuccessfulbuild" because "AlwaysCreate" was specified.
+         Touching "Debug\AquariumClient.unsuccessfulbuild".
        ClCompile:
          All outputs are up-to-date.
          C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Users\Student\Documents\SDL-1.2.15\include" /I"C:\Users\Student\Documents\Visual Studio 2010\Projects\AquariumGeneral" /I"C:\Users\Student\Documents\RakNet\RakNet-4.0.Beta5\Source" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /Gm /EHsc /RTC1 /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt AquariumClient.cpp
          AquariumClient.cpp
-       ManifestResourceCompile:
-         All outputs are up-to-date.
-       Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Student\Documents\Visual Studio 2010\Projects\AquariumServer\Debug\AquariumClient.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Users\Student\Documents\SDL-1.2.15\lib\x64" /LIBPATH:"C:\Users\Student\Documents\SDL-1.2.15\lib\x86" ws2_32.lib SDL.lib SDLmain.lib opengl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\AquariumClient.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Student\Documents\Visual Studio 2010\Projects\AquariumServer\Debug\AquariumClient.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Student\Documents\Visual Studio 2010\Projects\AquariumServer\Debug\AquariumClient.lib" /MACHINE:X86 Debug\AquariumClient.exe.embed.manifest.res
-         Debug\BitStream.obj
-         Debug\CCRakNetUDT.obj
-         Debug\CheckSum.obj
-         Debug\CommandParserInterface.obj
-         Debug\ConnectionGraph2.obj
-         Debug\ConsoleServer.obj
-         Debug\DataCompressor.obj
-         Debug\DirectoryDeltaTransfer.obj
-         Debug\DS_BytePool.obj
-         Debug\DS_ByteQueue.obj
-         Debug\DS_HuffmanEncodingTree.obj
-         Debug\DS_Table.obj
-         Debug\EmailSender.obj
-         Debug\EncodeClassName.obj
-         Debug\EpochTimeToString.obj
-         Debug\FileList.obj
-         Debug\FileListTransfer.obj
-         Debug\FileOperations.obj
-         Debug\FormatString.obj
-         Debug\FullyConnectedMesh2.obj
-         Debug\Getche.obj
-         Debug\Gets.obj
-         Debug\GetTime.obj
-         Debug\gettimeofday.obj
-         Debug\GridSectorizer.obj
-         Debug\HTTPConnection.obj
-         Debug\IncrementalReadInterface.obj
-         Debug\Itoa.obj
-         Debug\LinuxStrings.obj
-         Debug\LogCommandParser.obj
-         Debug\MessageFilter.obj
-         Debug\NatPunchthroughClient.obj
-         Debug\NatPunchthroughServer.obj
-         Debug\NatTypeDetectionClient.obj
-         Debug\NatTypeDetectionCommon.obj
-         Debug\NatTypeDetectionServer.obj
-         Debug\NetworkIDManager.obj
-         Debug\NetworkIDObject.obj
-         Debug\PacketConsoleLogger.obj
-         Debug\PacketFileLogger.obj
-         Debug\PacketizedTCP.obj
-         Debug\PacketLogger.obj
-         Debug\PacketOutputWindowLogger.obj
-         Debug\PluginInterface2.obj
-         Debug\RakMemoryOverride.obj
-         Debug\RakNetCommandParser.obj
-         Debug\RakNetSocket.obj
-         Debug\RakNetStatistics.obj
-         Debug\RakNetTransport2.obj
-         Debug\RakNetTypes.obj
-         Debug\RakPeer.obj
-         Debug\RakSleep.obj
-         Debug\RakString.obj
-         Debug\RakThread.obj
-         Debug\Rand.obj
-         Debug\rdlmalloc.obj
-         Debug\ReadyEvent.obj
-         Debug\ReliabilityLayer.obj
-         Debug\ReplicaManager3.obj
-         Debug\Router2.obj
-         Debug\RPC4Plugin.obj
-         Debug\SecureHandshake.obj
-         Debug\SendToThread.obj
-         Debug\SHA1.obj
-         Debug\SignaledEvent.obj
-         Debug\SimpleMutex.obj
-         Debug\SocketLayer.obj
-         Debug\StringCompressor.obj
-         Debug\StringTable.obj
-         Debug\SuperFastHash.obj
-         Debug\TableSerializer.obj
-         Debug\TCPInterface.obj
-         Debug\TeamBalancer.obj
-         Debug\TelnetTransport.obj
-         Debug\ThreadsafePacketLogger.obj
-         Debug\UDPForwarder.obj
-         Debug\UDPProxyClient.obj
-         Debug\UDPProxyCoordinator.obj
-         Debug\UDPProxyServer.obj
-         Debug\VariableDeltaSerializer.obj
-         Debug\VariableListDeltaTracker.obj
-         Debug\VariadicSQLParser.obj
-         Debug\WSAStartupSingleton.obj
-         Debug\_FindFirst.obj
-         Debug\AquariumCreature.obj
-         Debug\AquariumGameState.obj
-         Debug\AquariumRakNet.obj
-         Debug\AquariumClient.obj
-       Manifest:
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\AquariumClient.exe.embed.manifest" /manifest Debug\AquariumClient.exe.intermediate.manifest
-         All outputs are up-to-date.
-       LinkEmbedManifest:
-         All outputs are up-to-date.
-         AquariumClient.vcxproj -> C:\Users\Student\Documents\Visual Studio 2010\Projects\AquariumServer\Debug\AquariumClient.exe
-       FinalizeBuildStatus:
-         Deleting file "Debug\AquariumClient.unsuccessfulbuild".
-         Touching "Debug\AquariumClient.lastbuildstate".
-     1>Done Building Project "C:\Users\Student\Documents\Visual Studio 2010\Projects\AquariumClient\AquariumClient.vcxproj" (build target(s)).
+     1>c:\users\student\documents\github\colin-aie-term-project\aquariumclient\aquariumclient.cpp(37): error C2065: 'data' : undeclared identifier
+     1>c:\users\student\documents\github\colin-aie-term-project\aquariumclient\aquariumclient.cpp(160): error C2561: 'GameLoop' : function must return a value
+                 c:\users\student\documents\github\colin-aie-term-project\aquariumclient\aquariumclient.cpp(25) : see declaration of 'GameLoop'
+     1>c:\users\student\documents\github\colin-aie-term-project\aquariumclient\aquariumclient.cpp(167): error C2065: 'peer' : undeclared identifier
+     1>c:\users\student\documents\github\colin-aie-term-project\aquariumclient\aquariumclient.cpp(167): error C2227: left of '->Startup' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>c:\users\student\documents\github\colin-aie-term-project\aquariumclient\aquariumclient.cpp(169): error C2065: 'str' : undeclared identifier
+     1>c:\users\student\documents\github\colin-aie-term-project\aquariumclient\aquariumclient.cpp(170): error C2065: 'str' : undeclared identifier
+     1>c:\users\student\documents\github\colin-aie-term-project\aquariumclient\aquariumclient.cpp(171): error C2065: 'str' : undeclared identifier
+     1>c:\users\student\documents\github\colin-aie-term-project\aquariumclient\aquariumclient.cpp(173): error C2065: 'peer' : undeclared identifier
+     1>c:\users\student\documents\github\colin-aie-term-project\aquariumclient\aquariumclient.cpp(173): error C2227: left of '->Connect' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>c:\users\student\documents\github\colin-aie-term-project\aquariumclient\aquariumclient.cpp(173): error C2065: 'str' : undeclared identifier
+     1>c:\users\student\documents\github\colin-aie-term-project\aquariumclient\aquariumclient.cpp(173): error C2065: 'SERVER_PORT' : undeclared identifier
+     1>c:\users\student\documents\github\colin-aie-term-project\aquariumclient\aquariumclient.cpp(180): error C2664: 'CreateThread' : cannot convert parameter 3 from 'DWORD (__stdcall *)(AquariumGameState *)' to 'LPTHREAD_START_ROUTINE'
+                 None of the functions with this name in scope match the target type
+     1>Done Building Project "C:\Users\Student\Documents\GitHub\Colin-AIE-Term-Project\AquariumClient\AquariumClient.vcxproj" (build target(s)) -- FAILED.
 
-Build succeeded.
+Build FAILED.
 
-Time Elapsed 00:00:01.16
+Time Elapsed 00:00:01.01

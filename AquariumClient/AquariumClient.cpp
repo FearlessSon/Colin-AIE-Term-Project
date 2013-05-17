@@ -34,7 +34,7 @@ int main( int argc, char* args[] )
 	SDL_Flip(screen);				// Update screen
 	InitializeOpenGL();				// Set up OpenGL
 
-	AquariumGameState game_state;	// Game state
+	AquariumGameState *game_state = static_cast<AquariumGameState *>(data);
 
     SDL_Delay( 2000 );				// Pause
 
