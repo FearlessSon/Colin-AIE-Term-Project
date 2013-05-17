@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AquariumServer", "AquariumServer.vcxproj", "{2B7B2AA4-1E44-4C47-8469-77D5B568B225}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AquariumClient", "..\AquariumClient\AquariumClient.vcxproj", "{29E5069C-11E8-4802-ADEC-F72F235912DB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2B7B2AA4-1E44-4C47-8469-77D5B568B225}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2B7B2AA4-1E44-4C47-8469-77D5B568B225}.Debug|Win32.Build.0 = Debug|Win32
+		{2B7B2AA4-1E44-4C47-8469-77D5B568B225}.Release|Win32.ActiveCfg = Release|Win32
+		{2B7B2AA4-1E44-4C47-8469-77D5B568B225}.Release|Win32.Build.0 = Release|Win32
+		{29E5069C-11E8-4802-ADEC-F72F235912DB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{29E5069C-11E8-4802-ADEC-F72F235912DB}.Debug|Win32.Build.0 = Debug|Win32
+		{29E5069C-11E8-4802-ADEC-F72F235912DB}.Release|Win32.ActiveCfg = Release|Win32
+		{29E5069C-11E8-4802-ADEC-F72F235912DB}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

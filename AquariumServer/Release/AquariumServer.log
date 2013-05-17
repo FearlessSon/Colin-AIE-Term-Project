@@ -1,0 +1,395 @@
+﻿Build started 5/2/2013 11:42:42 AM.
+     1>Project "C:\Users\Student\Documents\Visual Studio 2010\Projects\AquariumServer\AquariumServer.vcxproj" on node 3 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Release\AquariumServer.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt "..\..\..\RakNet\RakNet-4.0.Beta5\Source\BitStream.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\CCRakNetUDT.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\CheckSum.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\CommandParserInterface.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\ConnectionGraph2.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\ConsoleServer.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\DataCompressor.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\DirectoryDeltaTransfer.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\DS_BytePool.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\DS_ByteQueue.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\DS_HuffmanEncodingTree.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\DS_Table.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\EmailSender.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\EncodeClassName.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\EpochTimeToString.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\FileList.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\FileListTransfer.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\FileOperations.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\FormatString.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\FullyConnectedMesh2.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\Getche.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\Gets.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\GetTime.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\gettimeofday.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\GridSectorizer.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\HTTPConnection.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\IncrementalReadInterface.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\Itoa.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\LinuxStrings.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\LogCommandParser.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\MessageFilter.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\NatPunchthroughClient.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\NatPunchthroughServer.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\NatTypeDetectionClient.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\NatTypeDetectionCommon.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\NatTypeDetectionServer.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\NetworkIDManager.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\NetworkIDObject.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\PacketConsoleLogger.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\PacketFileLogger.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\PacketizedTCP.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\PacketLogger.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\PacketOutputWindowLogger.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\PluginInterface2.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\RakMemoryOverride.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\RakNetCommandParser.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\RakNetSocket.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\RakNetStatistics.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\RakNetTransport2.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\RakNetTypes.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\RakPeer.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\RakSleep.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\RakString.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\RakThread.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\Rand.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\rdlmalloc.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\ReadyEvent.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\ReliabilityLayer.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\ReplicaManager3.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\Router2.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\RPC4Plugin.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\SecureHandshake.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\SendToThread.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\SHA1.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\SignaledEvent.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\SimpleMutex.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\SocketLayer.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\StringCompressor.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\StringTable.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\SuperFastHash.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\TableSerializer.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\TCPInterface.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\TeamBalancer.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\TelnetTransport.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\ThreadsafePacketLogger.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\UDPForwarder.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\UDPProxyClient.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\UDPProxyCoordinator.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\UDPProxyServer.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\VariableDeltaSerializer.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\VariableListDeltaTracker.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\VariadicSQLParser.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\WSAStartupSingleton.cpp" "..\..\..\RakNet\RakNet-4.0.Beta5\Source\_FindFirst.cpp" AquariumServer.cpp
+         BitStream.cpp
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\BitStream.cpp(830): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\BitStream.cpp(873): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+         CCRakNetUDT.cpp
+         CheckSum.cpp
+         CommandParserInterface.cpp
+         ConnectionGraph2.cpp
+         ConsoleServer.cpp
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\ConsoleServer.cpp(305): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+         DataCompressor.cpp
+         DirectoryDeltaTransfer.cpp
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\DirectoryDeltaTransfer.cpp(37): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\DirectoryDeltaTransfer.cpp(38): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\DirectoryDeltaTransfer.cpp(53): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\DirectoryDeltaTransfer.cpp(54): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\DirectoryDeltaTransfer.cpp(96): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(188) : see declaration of 'strncpy'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\DirectoryDeltaTransfer.cpp(98): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\DirectoryDeltaTransfer.cpp(132): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\DirectoryDeltaTransfer.cpp(136): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\DirectoryDeltaTransfer.cpp(138): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+         DS_BytePool.cpp
+         DS_ByteQueue.cpp
+         DS_HuffmanEncodingTree.cpp
+         DS_Table.cpp
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\DS_Table.cpp(99): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\DS_Table.cpp(147): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\DS_Table.cpp(239): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\DS_Table.cpp(943): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\DS_Table.cpp(950): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\DS_Table.cpp(967): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(188) : see declaration of 'strncpy'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\DS_Table.cpp(982): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\DS_Table.cpp(995): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(188) : see declaration of 'strncpy'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\DS_Table.cpp(1009): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\DS_Table.cpp(1034): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(188) : see declaration of 'strncpy'
+         EmailSender.cpp
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\EmailSender.cpp(87): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\EmailSender.cpp(105): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\EmailSender.cpp(114): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\EmailSender.cpp(116): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\EmailSender.cpp(123): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\EmailSender.cpp(125): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\EmailSender.cpp(141): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\EmailSender.cpp(146): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\EmailSender.cpp(151): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\EmailSender.cpp(167): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\EmailSender.cpp(172): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\EmailSender.cpp(175): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\EmailSender.cpp(179): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\EmailSender.cpp(264): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\EmailSender.cpp(267): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\EmailSender.cpp(281): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\EmailSender.cpp(286): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+         EncodeClassName.cpp
+         EpochTimeToString.cpp
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\EpochTimeToString.cpp(20): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\time.inl(112) : see declaration of 'localtime'
+         FileList.cpp
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\FileList.cpp(87): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\FileList.cpp(188): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\FileList.cpp(195): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\FileList.cpp(204): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\FileList.cpp(214): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\FileList.cpp(216): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\FileList.cpp(245): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\FileList.cpp(246): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\FileList.cpp(255): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\FileList.cpp(288): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\FileList.cpp(307): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\FileList.cpp(308): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\FileList.cpp(309): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\FileList.cpp(490): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\FileList.cpp(492): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\FileList.cpp(493): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\FileList.cpp(549): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\FileList.cpp(551): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\FileList.cpp(552): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\FileList.cpp(638): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\FileList.cpp(640): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\FileList.cpp(682): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\FileList.cpp(684): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\FileList.cpp(689): warning C4996: 'unlink': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _unlink. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(299) : see declaration of 'unlink'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\FileList.cpp(707): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+         FileListTransfer.cpp
+         FileOperations.cpp
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\FileOperations.cpp(36): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\FileOperations.cpp(50): warning C4996: 'mkdir': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _mkdir. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\direct.h(124) : see declaration of 'mkdir'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\FileOperations.cpp(70): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\FileOperations.cpp(86): warning C4996: 'mkdir': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _mkdir. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\direct.h(124) : see declaration of 'mkdir'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\FileOperations.cpp(126): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\FileOperations.cpp(128): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\FileOperations.cpp(158): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+         FormatString.cpp
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\FormatString.cpp(16): warning C4996: '_vsnprintf': This function or variable may be unsafe. Consider using _vsnprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(363) : see declaration of '_vsnprintf'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\FormatString.cpp(27): warning C4996: '_vsnprintf': This function or variable may be unsafe. Consider using _vsnprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(363) : see declaration of '_vsnprintf'
+         FullyConnectedMesh2.cpp
+         Compiling...
+         Getche.cpp
+         Gets.cpp
+         GetTime.cpp
+         gettimeofday.cpp
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\gettimeofday.cpp(47): warning C4996: '__timezone': This function or variable may be unsafe. Consider using _get_timezone instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\time.h(139) : see declaration of '__timezone'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\gettimeofday.cpp(48): warning C4996: '__daylight': This function or variable may be unsafe. Consider using _get_daylight instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\time.h(131) : see declaration of '__daylight'
+         GridSectorizer.cpp
+         HTTPConnection.cpp
+         IncrementalReadInterface.cpp
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\IncrementalReadInterface.cpp(8): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+         Itoa.cpp
+         LinuxStrings.cpp
+         LogCommandParser.cpp
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\LogCommandParser.cpp(136): warning C4996: '_vsnprintf': This function or variable may be unsafe. Consider using _vsnprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(363) : see declaration of '_vsnprintf'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\LogCommandParser.cpp(150): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+         MessageFilter.cpp
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\MessageFilter.cpp(72): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+         NatPunchthroughClient.cpp
+         NatPunchthroughServer.cpp
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\NatPunchthroughServer.cpp(190): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\NatPunchthroughServer.cpp(513): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+         NatTypeDetectionClient.cpp
+         NatTypeDetectionCommon.cpp
+         NatTypeDetectionServer.cpp
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\NatTypeDetectionServer.cpp(43): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+         NetworkIDManager.cpp
+         NetworkIDObject.cpp
+         PacketConsoleLogger.cpp
+         PacketFileLogger.cpp
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\PacketFileLogger.cpp(25): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\PacketFileLogger.cpp(27): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\PacketFileLogger.cpp(28): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+         Compiling...
+         PacketizedTCP.cpp
+         PacketLogger.cpp
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\PacketLogger.cpp(58): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\PacketLogger.cpp(93): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\PacketLogger.cpp(141): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\PacketLogger.cpp(162): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\PacketLogger.cpp(217): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\PacketLogger.cpp(370): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(188) : see declaration of 'strncpy'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\PacketLogger.cpp(375): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(188) : see declaration of 'strncpy'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\PacketLogger.cpp(390): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\time.inl(112) : see declaration of 'localtime'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\PacketLogger.cpp(393): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\PacketLogger.cpp(394): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+         PacketOutputWindowLogger.cpp
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\PacketOutputWindowLogger.cpp(23): error C2664: 'OutputDebugStringW' : cannot convert parameter 1 from 'const char *' to 'LPCWSTR'
+                 Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+         PluginInterface2.cpp
+         RakMemoryOverride.cpp
+         RakNetCommandParser.cpp
+         RakNetSocket.cpp
+         RakNetStatistics.cpp
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\RakNetStatistics.cpp(21): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\RakNetStatistics.cpp(34): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\RakNetStatistics.cpp(57): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\RakNetStatistics.cpp(66): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\RakNetStatistics.cpp(67): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\RakNetStatistics.cpp(76): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\RakNetStatistics.cpp(77): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\RakNetStatistics.cpp(125): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\RakNetStatistics.cpp(134): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\RakNetStatistics.cpp(135): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\RakNetStatistics.cpp(144): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\RakNetStatistics.cpp(145): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+         RakNetTransport2.cpp
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\RakNetTransport2.cpp(53): warning C4996: '_vsnprintf': This function or variable may be unsafe. Consider using _vsnprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(363) : see declaration of '_vsnprintf'
+         RakNetTypes.cpp
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\RakNetTypes.cpp(48): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\RakNetTypes.cpp(93): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\RakNetTypes.cpp(107): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\RakNetTypes.cpp(110): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+         RakPeer.cpp
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\RakPeer.cpp(1595): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+         RakSleep.cpp
+         RakString.cpp
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\RakString.cpp(146): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\RakString.cpp(170): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\RakString.cpp(188): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\RakString.cpp(321): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\RakString.cpp(322): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\RakString.cpp(921): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\RakString.cpp(935): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\RakString.cpp(1001): warning C4996: '_vsnprintf': This function or variable may be unsafe. Consider using _vsnprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(363) : see declaration of '_vsnprintf'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\RakString.cpp(1026): warning C4996: '_vsnprintf': This function or variable may be unsafe. Consider using _vsnprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(363) : see declaration of '_vsnprintf'
+         RakThread.cpp
+         Rand.cpp
+         rdlmalloc.cpp
+         ReadyEvent.cpp
+         ReliabilityLayer.cpp
+         ReplicaManager3.cpp
+         Router2.cpp
+         Compiling...
+         RPC4Plugin.cpp
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\RPC4Plugin.cpp(61): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+         SecureHandshake.cpp
+         SendToThread.cpp
+         SHA1.cpp
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\SHA1.cpp(201): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\SHA1.cpp(288): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\SHA1.cpp(289): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\SHA1.cpp(293): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\SHA1.cpp(294): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\SHA1.cpp(301): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\SHA1.cpp(302): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\SHA1.cpp(306): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\SHA1.cpp(307): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\SHA1.cpp(312): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+         SignaledEvent.cpp
+         SimpleMutex.cpp
+         SocketLayer.cpp
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\SocketLayer.cpp(1045): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+         StringCompressor.cpp
+         StringTable.cpp
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\StringTable.cpp(66): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\StringTable.cpp(131): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(188) : see declaration of 'strncpy'
+         SuperFastHash.cpp
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\SuperFastHash.cpp(92): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+         TableSerializer.cpp
+         TCPInterface.cpp
+         TeamBalancer.cpp
+         TelnetTransport.cpp
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\TelnetTransport.cpp(66): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\TelnetTransport.cpp(76): warning C4996: '_vsnprintf': This function or variable may be unsafe. Consider using _vsnprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(363) : see declaration of '_vsnprintf'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\TelnetTransport.cpp(84): warning C4996: 'strncat': This function or variable may be unsafe. Consider using strncat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(175) : see declaration of 'strncat'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\TelnetTransport.cpp(137): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\TelnetTransport.cpp(139): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\TelnetTransport.cpp(305): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\TelnetTransport.cpp(318): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+         ThreadsafePacketLogger.cpp
+     1>..\..\..\RakNet\RakNet-4.0.Beta5\Source\ThreadsafePacketLogger.cpp(34): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+         UDPForwarder.cpp
+         UDPProxyClient.cpp
+         UDPProxyCoordinator.cpp
+         UDPProxyServer.cpp
+         VariableDeltaSerializer.cpp
+         Compiling...
+         VariableListDeltaTracker.cpp
+         VariadicSQLParser.cpp
+         WSAStartupSingleton.cpp
+         _FindFirst.cpp
+         AquariumServer.cpp
+     1>AquariumServer.cpp(2): fatal error C1083: Cannot open include file: 'RakPeerInterface.h': No such file or directory
+     1>Done Building Project "C:\Users\Student\Documents\Visual Studio 2010\Projects\AquariumServer\AquariumServer.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:20.90
