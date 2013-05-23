@@ -1,6 +1,8 @@
 // Preprocessor declarations
 #include "AquariumMessageTypes.h"
 #include "AquariumGameState.h"
+#include "AquariumCreature.h"
+#include "AquariumRakNet.h"
 #include "RakPeerInterface.h"
 #include "MessageIdentifiers.h"
 #include "SDL.h"
@@ -13,6 +15,10 @@
 const int screenH = 640;
 const int screenV = 480;
 
+// Global declarations
+static RakNet::RakPeerInterface *peer = RakNet::RakPeerInterface::GetInstance();
+RakNet::RakNetGUID ServerID;
+
 // Function prototypes
 bool InitializeSDL(SDL_Surface* screen);							// Sets up SDL
 bool InitializeOpenGL();											// Sets up OpenGL
@@ -21,8 +27,9 @@ inline void LoopVertexDraw(int bottom, int top, float x, float y, AquariumCreatu
 void DrawFish(AquariumCreature *Fish);								// Draws a fish passed into it as an argument
 void DrawBigFish(AquariumCreature *Fish);							// Draws a big fish passed into it as an argument
 void DrawLittleFish(AquariumCreature *Fish);						// Draws a small fish passed into it as an argument
-void NetworkLoop(AquariumGameState *game_state);					// Loop for processing network packets
-DWORD WINAPI GameLoop(AquariumGameState *game_state);				// Main game loop
+void StartNetwork(AquariumGameState *game_state);					// Begins the network connection
+void NetworkLoop(AquariumGameState *game_state);					// Passes information to server, listens for information from server
+DWORD WINAPI GameLoop(void *data);									// Main game loop, braches off into seperate thread
 
 int main( int argc, char* args[] )
 {    
@@ -34,7 +41,11 @@ int main( int argc, char* args[] )
 	SDL_Flip(screen);				// Update screen
 	InitializeOpenGL();				// Set up OpenGL
 
-	AquariumGameState *game_state = static_cast<AquariumGameState *>(data);
+	AquariumGameState *game_state;	// Create game state
+
+	StartNetwork(game_state);								// Activate network
+	CreateThread(NULL, 0, GameLoop, &game_state, 0, NULL);	// Branch off a new thread for the game loop
+	NetworkLoop(game_state);								// Send and recieve information from server (loops)
 
     SDL_Delay( 2000 );				// Pause
 
@@ -150,32 +161,44 @@ void DrawLittleFish(AquariumCreature *Fish)
 }
 
 // Main game loop
-DWORD WINAPI GameLoop(AquariumGameState *game_state)
+DWORD WINAPI GameLoop(void *data)
 {
+	AquariumGameState *game_state = static_cast<AquariumGameState *>(data);	// Cast the game state object so we can use it
 	bool Game_Running = true;		// Stays true as long as the game is running
 	while (Game_Running == true)	// Begin the loop
 	{
+		for (int i = 0; i < SchoolSize; i++)			// Iterate through the fish school
+			DrawFish(&game_state->GetLittleFish(i));	// Draw each little fish
+		DrawFish(&game_state->GetBigFish());			// Draw the big fish
+		
 
 	}
-	return;
+	return 0;
 }
 
 // Loop for processing network packets
+void StartNetwork(AquariumGameState *game_state)
+{
+	char str[512];												// Holds console input
+	RakNet::SocketDescriptor sd;								// Creates a RakNet socket
+	peer->Startup(1, &sd, 1);									// Start up the network
+	printf("enter server IP or <CR> for localHost\n");			// Prompt for server address
+	gets(str);													// Take in service address
+	if (!str[0])												// If no address is entered...
+		strcpy(str, "127.0.0.1");								// ... then default to the local host
+	printf("attempting connection\n");
+	RakNet::ConnectionAttemptResult result = peer->Connect(str, SERVER_PORT, 0, 0);		// Attempt to connect
+	char *reasons[] = {"attempting", "invalid parameter", "bad domain name",			// Get the result of the attempt
+		               "already connected", "already attempting", "security failure"};
+	if (result != 0)											// Was the attempt a failure?
+	{
+		printf("CONNECTION FAILED (%s)\n", reasons[result]);	// ... then announce that... 
+		return;													// ... and quit in a huff
+	}
+}
+
+// Passes information to server, listens for information from server
 void NetworkLoop(AquariumGameState *game_state)
 {
-	RakNet::SocketDescriptor sd;
-	peer->Startup(1, &sd, 1);
-	printf("enter server IP or <CR> for localHost\n");
-	gets(str);
-	if (!str[0])
-		strcpy(str, "127.0.0.1"); // localHost
-	printf("attempting TicTacToe connection\n");
-	RakNet::ConnectionAttemptResult result = peer->Connect(str, SERVER_PORT, 0, 0);
-	char *reasons[] = {"attempting", "invalid parameter", "bad domain name",
-		               "already connected", "already attempting", "security failure"};
-	if (result != 0) {
-		printf("CONNECTION FAILED (%s)\n", reasons[result]);
-		return;
-	}
-    CreateThread(NULL, 0, GameLoop, NULL, 0, NULL);
+	
 }

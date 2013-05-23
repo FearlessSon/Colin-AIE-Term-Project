@@ -1,18 +1,14 @@
-﻿Build started 5/17/2013 3:04:12 PM.
+﻿Build started 5/23/2013 3:27:52 PM.
      1>Project "C:\Users\Student\Documents\GitHub\Colin-AIE-Term-Project\AquariumServer\AquariumServer.vcxproj" on node 3 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Debug\AquariumServer.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Users\Student\Documents\SDL-1.2.15\include" /I"C:\Users\Student\Documents\Visual Studio 2010\Projects\AquariumGeneral" /I"C:\Users\Student\Documents\RakNet\RakNet-4.0.Beta5\Source" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /Gm /EHsc /RTC1 /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\AquariumGeneral\AquariumCreature.cpp ..\AquariumGeneral\AquariumGameState.cpp ..\AquariumGeneral\AquariumRakNet.cpp AquariumServer.cpp
-         AquariumServer.cpp
-         AquariumRakNet.cpp
-     1>c:\users\student\documents\github\colin-aie-term-project\aquariumgeneral\aquariumraknet.cpp(28): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Users\Student\Documents\SDL-1.2.15\include" /I"C:\Users\Student\Documents\Visual Studio 2010\Projects\AquariumGeneral" /I"C:\Users\Student\Documents\RakNet\RakNet-4.0.Beta5\Source" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /Gm /EHsc /RTC1 /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\AquariumGeneral\AquariumCreature.cpp ..\AquariumGeneral\AquariumGameState.cpp
          AquariumGameState.cpp
          AquariumCreature.cpp
          Generating Code...
        ManifestResourceCompile:
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\AquariumServer.exe.embed.manifest.res" Debug\AquariumServer_manifest.rc 
+         All outputs are up-to-date.
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Student\Documents\GitHub\Colin-AIE-Term-Project\AquariumServer\Debug\AquariumServer.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Users\Student\Documents\SDL-1.2.15\lib\x64" /LIBPATH:"C:\Users\Student\Documents\SDL-1.2.15\lib\x86" ws2_32.lib SDL.lib SDLmain.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\AquariumServer.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Student\Documents\GitHub\Colin-AIE-Term-Project\AquariumServer\Debug\AquariumServer.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Student\Documents\GitHub\Colin-AIE-Term-Project\AquariumServer\Debug\AquariumServer.lib" /MACHINE:X86 Debug\AquariumServer.exe.embed.manifest.res
          Debug\BitStream.obj
@@ -116,4 +112,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:02.02
+Time Elapsed 00:00:01.13

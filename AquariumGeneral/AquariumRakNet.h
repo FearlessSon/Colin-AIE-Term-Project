@@ -4,7 +4,7 @@
 #include "RakPeerInterface.h"
 #include "SDL.h"
 
-RakNet::RakPeerInterface *peer = RakNet::RakPeerInterface::GetInstance();
+const unsigned int SERVER_PORT = 60000;
 
 void	PrintSystemMessage(RakNet::Packet *packet);
 void	SendPlayerMessage(char *msg, RakNet::AddressOrGUID guid);

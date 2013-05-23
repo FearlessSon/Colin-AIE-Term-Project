@@ -5,6 +5,8 @@
 #include "SDL.h"
 #include <stdio.h>
 
+static RakNet::RakPeerInterface *peer = RakNet::RakPeerInterface::GetInstance();
+
 void	PrintSystemMessage(RakNet::Packet *packet)
 {
 	unsigned char c = packet->data[0];

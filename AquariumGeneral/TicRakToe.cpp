@@ -201,6 +201,7 @@ void MouseButton(int butn, int state, int x, int y) {
 }
 
 DWORD WINAPI StartGame(void *data) {
+	// Game *game = static_cast<Game *>(data);
 	// init game window
 	char *name = "TicRakToe";
 	int ac = 1, xPosition = FindWindow(NULL, "TicRakToe") == NULL? 950 : 1400;
