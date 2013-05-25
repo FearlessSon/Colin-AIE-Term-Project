@@ -1,12 +1,10 @@
-﻿Build started 5/23/2013 3:27:52 PM.
+﻿Build started 5/24/2013 5:06:19 PM.
      1>Project "C:\Users\Student\Documents\GitHub\Colin-AIE-Term-Project\AquariumServer\AquariumServer.vcxproj" on node 3 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Debug\AquariumServer.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Users\Student\Documents\SDL-1.2.15\include" /I"C:\Users\Student\Documents\Visual Studio 2010\Projects\AquariumGeneral" /I"C:\Users\Student\Documents\RakNet\RakNet-4.0.Beta5\Source" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /Gm /EHsc /RTC1 /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\AquariumGeneral\AquariumCreature.cpp ..\AquariumGeneral\AquariumGameState.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Users\Student\Documents\SDL-1.2.15\include" /I"C:\Users\Student\Documents\Visual Studio 2010\Projects\AquariumGeneral" /I"C:\Users\Student\Documents\RakNet\RakNet-4.0.Beta5\Source" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /Gm /EHsc /RTC1 /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\AquariumGeneral\AquariumGameState.cpp
          AquariumGameState.cpp
-         AquariumCreature.cpp
-         Generating Code...
        ManifestResourceCompile:
          All outputs are up-to-date.
        Link:
@@ -112,4 +110,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.13
+Time Elapsed 00:00:01.04

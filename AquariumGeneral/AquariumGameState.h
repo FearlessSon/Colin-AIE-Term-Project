@@ -28,7 +28,7 @@ public:
 	void SetLittleFish(int i, LittleFish new_fish);	// Passes in a little fish and assigns it to i
 	void SetBigFish(BigFish new_fish);				// Passes in a big fish and sets it
 	~AquariumGameState();							// Destructor
-private:
+//private:
 	LittleFish	FishSchool[SchoolSize];				// Array of little fish
 	BigFish		LargeFish;							// Large fish
 };

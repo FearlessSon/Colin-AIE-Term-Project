@@ -18,6 +18,7 @@ const int screenV = 480;
 // Global declarations
 static RakNet::RakPeerInterface *peer = RakNet::RakPeerInterface::GetInstance();
 RakNet::RakNetGUID ServerID;
+char NetworkMessage[1000];
 
 // Function prototypes
 bool InitializeSDL(SDL_Surface* screen);							// Sets up SDL
@@ -171,7 +172,7 @@ DWORD WINAPI GameLoop(void *data)
 			DrawFish(&game_state->GetLittleFish(i));	// Draw each little fish
 		DrawFish(&game_state->GetBigFish());			// Draw the big fish
 		
-
+		SDL_GL_SwapBuffers();							// Redraw the screen
 	}
 	return 0;
 }
@@ -192,7 +193,7 @@ void StartNetwork(AquariumGameState *game_state)
 		               "already connected", "already attempting", "security failure"};
 	if (result != 0)											// Was the attempt a failure?
 	{
-		printf("CONNECTION FAILED (%s)\n", reasons[result]);	// ... then announce that... 
+		printf("CONNECTION FAILED (%s)\n", reasons[result]);	// ... then announce it so... 
 		return;													// ... and quit in a huff
 	}
 }
@@ -200,5 +201,37 @@ void StartNetwork(AquariumGameState *game_state)
 // Passes information to server, listens for information from server
 void NetworkLoop(AquariumGameState *game_state)
 {
-	
+	for (RakNet::Packet *packet = peer->Receive(); packet; packet = peer->Receive())	// Keeps looping and listening for packets
+	{
+		unsigned char *s = packet->data;					// Pointer to the RakNet packet data, used for accessing network messages
+		if (*s < ID_USER_PACKET_ENUM)						// If just a plain text message...
+			PrintSystemMessage(packet);						// ... then output it to the console
+		if (*s == ID_USER_MESSAGE)							// If... some other kind of message...
+			strcpy(NetworkMessage, (const char *) s+1);		// ... then send it?
+		if (*s == OUTPUT_UPDATE_POSITION)					// If message is to update a creature's position
+		{
+			strcpy(NetworkMessage, (const char *) s+1);
+			if ((int) packet->data[1] != (SchoolSize+1))	// Set position of one of the little fish
+				game_state->FishSchool[packet->data[1]].SetPos((float) packet->data[2], (float) packet->data[3]);
+			if ((int) packet->data[1] == (SchoolSize+1))	// Set the position of the large fish
+				game_state->LargeFish.SetPos((float) packet->data[2], (float) packet->data[3]);
+		}
+		if (*s == OUTPUT_BUBBLES)							// If  message is to create some bubbles
+		{
+			strcpy(NetworkMessage, (const char *) s+1);
+			// To be filled...
+		}
+		if (*s == OUTPUT_FEED_FISH)							// If message is to feed fish
+		{
+			strcpy(NetworkMessage, (const char *) s+1);
+			// To be filled...
+		}
+		if (*s == OUTPUT_TAP_GLASS)							// If message is to tap glass
+		{
+			strcpy(NetworkMessage, (const char *) s+1);
+			// To be filled...
+		}
+		peer->DeallocatePacket(packet);
+		SDL_GL_SwapBuffers();
+	}
 }

@@ -1,3 +1,12 @@
+/*
+	AquariumRakNet.h
+
+	Header file for RakNet related functions and globals, for use in the Aquarium project.
+
+	Colin Ferguson, 2013
+*/
+
+// Preprocessor declarations
 #include "AquariumRakNet.h"
 #include "AquariumMessageTypes.h"
 #include "RakPeerInterface.h"
@@ -5,8 +14,10 @@
 #include "SDL.h"
 #include <stdio.h>
 
+// RakNet peer interface declared and initialized
 static RakNet::RakPeerInterface *peer = RakNet::RakPeerInterface::GetInstance();
 
+// Outputs network messages to the console
 void	PrintSystemMessage(RakNet::Packet *packet)
 {
 	unsigned char c = packet->data[0];
@@ -23,6 +34,7 @@ void	PrintSystemMessage(RakNet::Packet *packet)
 	return;
 }
 
+// Sends messages from the server to the clients
 void	SendPlayerMessage(char *msg, RakNet::AddressOrGUID guid)
 {
 	char buf[100];
@@ -33,6 +45,7 @@ void	SendPlayerMessage(char *msg, RakNet::AddressOrGUID guid)
 	return;
 }
 
+// Processes packets send from a client to the server
 void	ProcessPacketsReceivedByServer()
 {
 	for (RakNet::Packet *packet = peer->Receive(); packet; packet = peer->Receive())
@@ -63,6 +76,7 @@ void	ProcessPacketsReceivedByServer()
 	return;
 }
 
+// Processes packets sent from the server to the clients
 void	ProcessPacketsReceivedByClient(SDL_Surface* screen)
 {
 	for (RakNet::Packet *packet = peer->Receive(); packet; packet = peer->Receive()) {
