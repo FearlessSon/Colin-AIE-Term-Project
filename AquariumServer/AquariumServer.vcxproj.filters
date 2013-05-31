@@ -270,9 +270,6 @@
     <ClCompile Include="..\..\..\RakNet\RakNet-4.0.Beta5\Source\WSAStartupSingleton.cpp">
       <Filter>RakNet</Filter>
     </ClCompile>
-    <ClCompile Include="AquariumServer.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\AquariumGeneral\AquariumRakNet.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -280,6 +277,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\AquariumGeneral\AquariumCreature.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AquariumServer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -689,13 +689,13 @@
     <ClInclude Include="..\AquariumGeneral\AquariumMessageTypes.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\AquariumGeneral\AquariumRakNet.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\AquariumGeneral\AquariumGameState.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\AquariumGeneral\AquariumCreature.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AquariumGeneral\AquariumRakNet.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

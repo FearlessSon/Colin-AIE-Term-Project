@@ -21,7 +21,7 @@ RakNet::RakNetGUID ServerID;
 char NetworkMessage[1000];
 
 // Function prototypes
-bool InitializeSDL(SDL_Surface* screen);							// Sets up SDL
+SDL_Surface *InitializeSDL();										// Sets up SDL
 bool InitializeOpenGL();											// Sets up OpenGL
 void GetVertex(float *x, float *y, AquariumCreature *Fish, int i);	// Gets a vertex of a given Creature
 inline void LoopVertexDraw(int bottom, int top, float x, float y, AquariumCreature *Fish);	// Loops around getting vertexes and doing GL calls
@@ -29,46 +29,35 @@ void DrawFish(AquariumCreature *Fish);								// Draws a fish passed into it as 
 void DrawBigFish(AquariumCreature *Fish);							// Draws a big fish passed into it as an argument
 void DrawLittleFish(AquariumCreature *Fish);						// Draws a small fish passed into it as an argument
 void StartNetwork(AquariumGameState *game_state);					// Begins the network connection
-void NetworkLoop(AquariumGameState *game_state);					// Passes information to server, listens for information from server
-DWORD WINAPI GameLoop(void *data);									// Main game loop, braches off into seperate thread
+DWORD WINAPI NetworkLoop(void *data);								// Passes information to server, listens for information from server
+void GameLoop(AquariumGameState *game_state);						// Main game loop
 
 int main( int argc, char* args[] )
 {    
-	// Create screen surface
-	SDL_Surface* screen = NULL;
-	SDL_Surface* hello = NULL;
+	AquariumGameState game_state;			// Create game state
 
-	InitializeSDL(screen);			// Set up SDL
-	SDL_Flip(screen);				// Update screen
-	InitializeOpenGL();				// Set up OpenGL
+	SDL_Surface* screen = InitializeSDL();	// Create screen surface
+	InitializeOpenGL();						// Set up OpenGL
 
-	AquariumGameState *game_state;	// Create game state
+	StartNetwork(&game_state);									// Activate network
+	CreateThread(NULL, 0, NetworkLoop, &game_state, 0, NULL);	// Send and recieve information from server in new thread
+	GameLoop(&game_state);										// Main program loop
 
-	StartNetwork(game_state);								// Activate network
-	CreateThread(NULL, 0, GameLoop, &game_state, 0, NULL);	// Branch off a new thread for the game loop
-	NetworkLoop(game_state);								// Send and recieve information from server (loops)
-
-    SDL_Delay( 2000 );				// Pause
-
-	SDL_FreeSurface(hello);			// Free the loaded image
     SDL_Quit();						// Quit SDL
-    
-    return 0;
+    return 0;						// Quit program
 }
 
 // Sets up SDL
-bool InitializeSDL(SDL_Surface* screen)
+SDL_Surface *InitializeSDL()
 {
 	if (SDL_Init(SDL_INIT_VIDEO) != 0)
 	{
 		printf("Unable to initialize SDL: %s\n", SDL_GetError());
-		return 1;
+		return NULL;
 	}
  
 	SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 1);
-	screen = SDL_SetVideoMode(640, 480, 16, SDL_OPENGL);
-
-	return true;
+	return SDL_SetVideoMode(640, 480, 16, SDL_OPENGL);
 }
 
 // Sets up OpenGL
@@ -162,19 +151,19 @@ void DrawLittleFish(AquariumCreature *Fish)
 }
 
 // Main game loop
-DWORD WINAPI GameLoop(void *data)
+void GameLoop(AquariumGameState *game_state)
 {
-	AquariumGameState *game_state = static_cast<AquariumGameState *>(data);	// Cast the game state object so we can use it
 	bool Game_Running = true;		// Stays true as long as the game is running
 	while (Game_Running == true)	// Begin the loop
 	{
 		for (int i = 0; i < SchoolSize; i++)			// Iterate through the fish school
 			DrawFish(&game_state->GetLittleFish(i));	// Draw each little fish
 		DrawFish(&game_state->GetBigFish());			// Draw the big fish
-		
+
+		SDL_Delay(10);									// Brief delay to give the OS a little breathing room
 		SDL_GL_SwapBuffers();							// Redraw the screen
 	}
-	return 0;
+	return;
 }
 
 // Loop for processing network packets
@@ -199,8 +188,9 @@ void StartNetwork(AquariumGameState *game_state)
 }
 
 // Passes information to server, listens for information from server
-void NetworkLoop(AquariumGameState *game_state)
+DWORD WINAPI NetworkLoop(void *data)
 {
+	AquariumGameState *game_state = static_cast<AquariumGameState *>(data);	// Cast the game state object so we can use it
 	for (RakNet::Packet *packet = peer->Receive(); packet; packet = peer->Receive())	// Keeps looping and listening for packets
 	{
 		unsigned char *s = packet->data;					// Pointer to the RakNet packet data, used for accessing network messages
@@ -232,6 +222,6 @@ void NetworkLoop(AquariumGameState *game_state)
 			// To be filled...
 		}
 		peer->DeallocatePacket(packet);
-		SDL_GL_SwapBuffers();
 	}
+	return 1;
 }

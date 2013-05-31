@@ -1,31 +1,10 @@
-﻿Build started 5/24/2013 5:06:19 PM.
+﻿Build started 5/31/2013 3:24:24 PM.
      1>Project "C:\Users\Student\Documents\GitHub\Colin-AIE-Term-Project\AquariumClient\AquariumClient.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Debug\AquariumClient.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Users\Student\Documents\GitHub\Colin-AIE-Term-Project\SDL\include" /I"C:\Users\Student\Documents\GitHub\Colin-AIE-Term-Project\AquariumGeneral" /I"C:\Users\Student\Documents\GitHub\Colin-AIE-Term-Project\RakNet\Source" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /Gm /EHsc /RTC1 /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\AquariumGeneral\AquariumGameState.cpp
-         AquariumGameState.cpp
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Users\Student\Documents\GitHub\Colin-AIE-Term-Project\SDL\include" /I"C:\Users\Student\Documents\GitHub\Colin-AIE-Term-Project\AquariumGeneral" /I"C:\Users\Student\Documents\GitHub\Colin-AIE-Term-Project\RakNet\Source" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /Gm /EHsc /RTC1 /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt AquariumClient.cpp
-         AquariumClient.cpp
-     1>c:\users\student\documents\github\colin-aie-term-project\aquariumclient\aquariumclient.cpp(187): warning C4996: 'gets': This function or variable may be unsafe. Consider using gets_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(277) : see declaration of 'gets'
-     1>c:\users\student\documents\github\colin-aie-term-project\aquariumclient\aquariumclient.cpp(189): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
-     1>c:\users\student\documents\github\colin-aie-term-project\aquariumclient\aquariumclient.cpp(210): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
-     1>c:\users\student\documents\github\colin-aie-term-project\aquariumclient\aquariumclient.cpp(213): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
-     1>c:\users\student\documents\github\colin-aie-term-project\aquariumclient\aquariumclient.cpp(215): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
-     1>c:\users\student\documents\github\colin-aie-term-project\aquariumclient\aquariumclient.cpp(215): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
-     1>c:\users\student\documents\github\colin-aie-term-project\aquariumclient\aquariumclient.cpp(217): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
-     1>c:\users\student\documents\github\colin-aie-term-project\aquariumclient\aquariumclient.cpp(217): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
-     1>c:\users\student\documents\github\colin-aie-term-project\aquariumclient\aquariumclient.cpp(221): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
-     1>c:\users\student\documents\github\colin-aie-term-project\aquariumclient\aquariumclient.cpp(226): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
-     1>c:\users\student\documents\github\colin-aie-term-project\aquariumclient\aquariumclient.cpp(231): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
-     1>c:\users\student\documents\github\colin-aie-term-project\aquariumclient\aquariumclient.cpp(47): warning C4700: uninitialized local variable 'game_state' used
+         All outputs are up-to-date.
+         All outputs are up-to-date.
        ManifestResourceCompile:
          All outputs are up-to-date.
        Link:
@@ -131,4 +110,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.83
+Time Elapsed 00:00:00.72
