@@ -43,8 +43,9 @@ int main( int argc, char* args[] )
 	CreateThread(NULL, 0, NetworkLoop, &game_state, 0, NULL);	// Send and recieve information from server in new thread
 	GameLoop(&game_state);										// Main program loop
 
-    SDL_Quit();						// Quit SDL
-    return 0;						// Quit program
+    SDL_Quit();													// Quit SDL
+	RakNet::RakPeerInterface::DestroyInstance(peer);			// Shut down RakNet
+    return 0;													// Quit program
 }
 
 // Sets up SDL
@@ -156,7 +157,7 @@ void GameLoop(AquariumGameState *game_state)
 	bool Game_Running = true;		// Stays true as long as the game is running
 	while (Game_Running == true)	// Begin the loop
 	{
-		for (int i = 0; i < SchoolSize; i++)			// Iterate through the fish school
+		for (int i = 0; i < SCHOOL_SIZE; i++)			// Iterate through the fish school
 			DrawFish(&game_state->GetLittleFish(i));	// Draw each little fish
 		DrawFish(&game_state->GetBigFish());			// Draw the big fish
 
@@ -172,11 +173,11 @@ void StartNetwork(AquariumGameState *game_state)
 	char str[512];												// Holds console input
 	RakNet::SocketDescriptor sd;								// Creates a RakNet socket
 	peer->Startup(1, &sd, 1);									// Start up the network
-	printf("enter server IP or <CR> for localHost\n");			// Prompt for server address
+	printf("Enter server IP or <CR> for localHost\n");			// Prompt for server address
 	gets(str);													// Take in service address
 	if (!str[0])												// If no address is entered...
 		strcpy(str, "127.0.0.1");								// ... then default to the local host
-	printf("attempting connection\n");
+	printf("Attempting connection\n");
 	RakNet::ConnectionAttemptResult result = peer->Connect(str, SERVER_PORT, 0, 0);		// Attempt to connect
 	char *reasons[] = {"attempting", "invalid parameter", "bad domain name",			// Get the result of the attempt
 		               "already connected", "already attempting", "security failure"};
@@ -201,9 +202,9 @@ DWORD WINAPI NetworkLoop(void *data)
 		if (*s == OUTPUT_UPDATE_POSITION)					// If message is to update a creature's position
 		{
 			strcpy(NetworkMessage, (const char *) s+1);
-			if ((int) packet->data[1] != (SchoolSize+1))	// Set position of one of the little fish
+			if ((int) packet->data[1] != (SCHOOL_SIZE+1))	// Set position of one of the little fish
 				game_state->FishSchool[packet->data[1]].SetPos((float) packet->data[2], (float) packet->data[3]);
-			if ((int) packet->data[1] == (SchoolSize+1))	// Set the position of the large fish
+			if ((int) packet->data[1] == (SCHOOL_SIZE+1))	// Set the position of the large fish
 				game_state->LargeFish.SetPos((float) packet->data[2], (float) packet->data[3]);
 		}
 		if (*s == OUTPUT_BUBBLES)							// If  message is to create some bubbles

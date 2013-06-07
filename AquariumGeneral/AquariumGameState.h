@@ -14,7 +14,7 @@
 #include "AquariumCreature.h"
 
 // Constant declarations
-const int SchoolSize = 10;
+const int SCHOOL_SIZE = 10;
 
 // AquariumGameState class
 // This class holds the state of the game.  It is meant to be passed by
@@ -29,7 +29,7 @@ public:
 	void SetBigFish(BigFish new_fish);				// Passes in a big fish and sets it
 	~AquariumGameState();							// Destructor
 //private:
-	LittleFish	FishSchool[SchoolSize];				// Array of little fish
+	LittleFish	FishSchool[SCHOOL_SIZE];			// Array of little fish
 	BigFish		LargeFish;							// Large fish
 };
 

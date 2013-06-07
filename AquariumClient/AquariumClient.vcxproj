@@ -166,6 +166,7 @@
     <ClCompile Include="..\AquariumGeneral\AquariumCreature.cpp" />
     <ClCompile Include="..\AquariumGeneral\AquariumGameState.cpp" />
     <ClCompile Include="..\AquariumGeneral\AquariumRakNet.cpp" />
+    <ClCompile Include="..\AquariumGeneral\AquariumVector2.cpp" />
     <ClCompile Include="AquariumClient.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
     </ClCompile>
@@ -309,6 +310,7 @@
     <ClInclude Include="..\AquariumGeneral\AquariumGameState.h" />
     <ClInclude Include="..\AquariumGeneral\AquariumMessageTypes.h" />
     <ClInclude Include="..\AquariumGeneral\AquariumRakNet.h" />
+    <ClInclude Include="..\AquariumGeneral\AquariumVector2.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\RakNet\RakNet-4.0.Beta5\Source\CMakeLists.txt" />

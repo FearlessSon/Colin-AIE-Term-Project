@@ -56,9 +56,10 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>ws2_32.lib;SDL.lib;SDLmain.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>C:\Users\Student\Documents\GitHub\Colin-AIE-Term-Project\SDL\lib\x64;C:\Users\Student\Documents\GitHub\Colin-AIE-Term-Project\SDL\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <EntryPointSymbol>main(int argc, char *argv[])</EntryPointSymbol>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -166,6 +167,7 @@
     <ClCompile Include="..\AquariumGeneral\AquariumCreature.cpp" />
     <ClCompile Include="..\AquariumGeneral\AquariumGameState.cpp" />
     <ClCompile Include="..\AquariumGeneral\AquariumRakNet.cpp" />
+    <ClCompile Include="..\AquariumGeneral\AquariumVector2.cpp" />
     <ClCompile Include="AquariumServer.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -307,6 +309,7 @@
     <ClInclude Include="..\AquariumGeneral\AquariumGameState.h" />
     <ClInclude Include="..\AquariumGeneral\AquariumMessageTypes.h" />
     <ClInclude Include="..\AquariumGeneral\AquariumRakNet.h" />
+    <ClInclude Include="..\AquariumGeneral\AquariumVector2.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\RakNet\RakNet-4.0.Beta5\Source\CMakeLists.txt" />

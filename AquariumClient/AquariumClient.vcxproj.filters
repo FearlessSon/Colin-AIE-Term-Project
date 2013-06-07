@@ -282,6 +282,9 @@
     <ClCompile Include="..\AquariumGeneral\AquariumCreature.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\AquariumGeneral\AquariumVector2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\RakNet\RakNet-4.0.Beta5\Source\_FindFirst.h">
@@ -696,6 +699,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\AquariumGeneral\AquariumCreature.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AquariumGeneral\AquariumVector2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
