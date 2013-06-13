@@ -4,6 +4,7 @@
 #include "AquariumRakNet.h"
 #include "RakPeerInterface.h"
 #include "MessageIdentifiers.h"
+#include "AquariumVector2.h"
 #include <math.h>
 #include <stdio.h>
 #include <Winuser.h>

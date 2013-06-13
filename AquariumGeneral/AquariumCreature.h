@@ -10,6 +10,9 @@
 #ifndef AQUARIUM_CREATURE
 #define AQUARIUM_CREATURE
 
+// Includes
+#include "AquariumVector2.h"
+
 // Constant declarations
 const int LittleFishTotalVerticies = 8;
 const int BigFishTotalVerticies = 10;
@@ -28,7 +31,9 @@ class AquariumCreature
 public:
 	AquariumCreature();						// Class constructor
 	void	SetPos(int x, int y);			// Assigns current position to x and y
+	void	SetPos(Vector2 new_pos);		// Assigns current position to new_pos
 	void	GetPos(int *x, int *y);			// Assigns x and y arguments to current position
+	Vector2	GetPos(void);					// Returns position as a vector2
 	int		GetXPos(void);					// Returns x position
 	int		GetYPos(void);					// Returns y position
 	void	GetPrevPos(int *x, int *y);		// Assigns x and y arguments to previous position
@@ -41,8 +46,8 @@ public:
 	virtual float GetVertex(int x, int y)=0;// Returns the x or y value of the specified vertex
 	~AquariumCreature();					// Class destructor
 protected:
-	int		xpos, ypos;						// The x and y position of the creature
-	int		prevxpos, prevypos;				// The previous x and y position of the creature
+	Vector2	position;						// The x and y position of the creature
+	Vector2	prev_position;					// The previous x and y position of the creature
 	int		total_verticies;				// The total number of verticies in the creature
 	float	rotation;						// Rotation of the creature
 	CreatureType draw_type;					// The type of creature for drawing functions

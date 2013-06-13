@@ -7,18 +7,28 @@
 */
 
 #include "AquariumVector2.h"
- 
+
+// Empty class constructor
 Vector2::Vector2(void)
 {
-
+	// Set default values to zero
+	Set(0.0, 0.0);
 }
- 
+
+// Assignment class constructor
 Vector2::Vector2(float X, float Y)
 {
-    this->X = X;
-    this->Y = Y;
+	// Set the arguments of this vector
+    Set(X, Y);
 }
- 
+
+// Sets values to X and Y
+void Vector2::Set(float X, float Y)
+{
+	this->X = X;
+	this->Y = Y;
+}
+
 // Returns the length of the vector
 float Vector2::Length()
 {
@@ -28,18 +38,19 @@ float Vector2::Length()
 // Normalizes the vector
 Vector2 Vector2::Normalize()
 {
-    Vector2 vector;
-    float length = this->Length();
+    Vector2 vector;					// Holds the value to return
+    float length = this->Length();	// Holds the length of the vector
  
-    if(length != 0)
+    if(length != 0)					// Assuming that the vector is not of zero length
 	{
-        vector.X = X/length;
-        vector.Y = Y/length;
+        vector.X = X/length;		// Divide the X value by the total length
+        vector.Y = Y/length;		// Divide the Y value by the total length
     }
  
-    return vector;
+    return vector;					// Return the normalized vector
 }
- 
+
+// Class destructor
 Vector2::~Vector2(void)
 {
 

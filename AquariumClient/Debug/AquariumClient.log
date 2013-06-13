@@ -1,15 +1,53 @@
-﻿Build started 6/6/2013 5:51:08 PM.
+﻿Build started 6/10/2013 5:32:51 PM.
      1>Project "C:\Users\Student\Documents\GitHub\Colin-AIE-Term-Project\AquariumClient\AquariumClient.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Debug\AquariumClient.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Users\Student\Documents\GitHub\Colin-AIE-Term-Project\SDL\include" /I"C:\Users\Student\Documents\GitHub\Colin-AIE-Term-Project\AquariumGeneral" /I"C:\Users\Student\Documents\GitHub\Colin-AIE-Term-Project\RakNet\Source" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /Gm /EHsc /RTC1 /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\AquariumGeneral\AquariumVector2.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Users\Student\Documents\GitHub\Colin-AIE-Term-Project\SDL\include" /I"C:\Users\Student\Documents\GitHub\Colin-AIE-Term-Project\AquariumGeneral" /I"C:\Users\Student\Documents\GitHub\Colin-AIE-Term-Project\RakNet\Source" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /Gm /EHsc /RTC1 /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\AquariumGeneral\AquariumCreature.cpp ..\AquariumGeneral\AquariumGameState.cpp ..\AquariumGeneral\AquariumVector2.cpp
          AquariumVector2.cpp
-         All outputs are up-to-date.
+         AquariumCreature.cpp
+     1>c:\users\student\documents\github\colin-aie-term-project\aquariumgeneral\aquariumcreature.cpp(29): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\student\documents\github\colin-aie-term-project\aquariumgeneral\aquariumcreature.cpp(29): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\student\documents\github\colin-aie-term-project\aquariumgeneral\aquariumcreature.cpp(36): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\student\documents\github\colin-aie-term-project\aquariumgeneral\aquariumcreature.cpp(37): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\student\documents\github\colin-aie-term-project\aquariumgeneral\aquariumcreature.cpp(44): warning C4244: 'return' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\student\documents\github\colin-aie-term-project\aquariumgeneral\aquariumcreature.cpp(51): warning C4244: 'return' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\student\documents\github\colin-aie-term-project\aquariumgeneral\aquariumcreature.cpp(58): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\student\documents\github\colin-aie-term-project\aquariumgeneral\aquariumcreature.cpp(59): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\student\documents\github\colin-aie-term-project\aquariumgeneral\aquariumcreature.cpp(66): warning C4244: 'return' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\student\documents\github\colin-aie-term-project\aquariumgeneral\aquariumcreature.cpp(73): warning C4244: 'return' : conversion from 'float' to 'int', possible loss of data
+         Generating Code...
+         Compiling...
+         AquariumGameState.cpp
+         Generating Code...
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Users\Student\Documents\GitHub\Colin-AIE-Term-Project\SDL\include" /I"C:\Users\Student\Documents\GitHub\Colin-AIE-Term-Project\AquariumGeneral" /I"C:\Users\Student\Documents\GitHub\Colin-AIE-Term-Project\RakNet\Source" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /Gm /EHsc /RTC1 /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt AquariumClient.cpp
+         AquariumClient.cpp
+     1>c:\users\student\documents\github\colin-aie-term-project\aquariumclient\aquariumclient.cpp(177): warning C4996: 'gets': This function or variable may be unsafe. Consider using gets_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(277) : see declaration of 'gets'
+     1>c:\users\student\documents\github\colin-aie-term-project\aquariumclient\aquariumclient.cpp(179): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>c:\users\student\documents\github\colin-aie-term-project\aquariumclient\aquariumclient.cpp(201): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>c:\users\student\documents\github\colin-aie-term-project\aquariumclient\aquariumclient.cpp(204): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>c:\users\student\documents\github\colin-aie-term-project\aquariumclient\aquariumclient.cpp(206): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\student\documents\github\colin-aie-term-project\aquariumclient\aquariumclient.cpp(206): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\student\documents\github\colin-aie-term-project\aquariumclient\aquariumclient.cpp(208): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\student\documents\github\colin-aie-term-project\aquariumclient\aquariumclient.cpp(208): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\student\documents\github\colin-aie-term-project\aquariumclient\aquariumclient.cpp(212): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>c:\users\student\documents\github\colin-aie-term-project\aquariumclient\aquariumclient.cpp(217): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>c:\users\student\documents\github\colin-aie-term-project\aquariumclient\aquariumclient.cpp(222): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
        ManifestResourceCompile:
          All outputs are up-to-date.
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Student\Documents\GitHub\Colin-AIE-Term-Project\AquariumServer\Debug\AquariumClient.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Users\Student\Documents\GitHub\Colin-AIE-Term-Project\SDL\lib\x86" /LIBPATH:"C:\Users\Student\Documents\GitHub\Colin-AIE-Term-Project\SDL\lib\x64" ws2_32.lib SDL.lib SDLmain.lib opengl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\AquariumClient.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Student\Documents\GitHub\Colin-AIE-Term-Project\AquariumServer\Debug\AquariumClient.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Student\Documents\GitHub\Colin-AIE-Term-Project\AquariumServer\Debug\AquariumClient.lib" /MACHINE:X86 Debug\AquariumClient.exe.embed.manifest.res
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Student\Documents\GitHub\Colin-AIE-Term-Project\AquariumServer\Debug\AquariumClient.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Users\Student\Documents\GitHub\Colin-AIE-Term-Project\RakNet\Lib" /LIBPATH:"C:\Users\Student\Documents\GitHub\Colin-AIE-Term-Project\SDL\lib\x86" /LIBPATH:"C:\Users\Student\Documents\GitHub\Colin-AIE-Term-Project\SDL\lib\x64" ws2_32.lib SDL.lib SDLmain.lib opengl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\AquariumClient.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Student\Documents\GitHub\Colin-AIE-Term-Project\AquariumServer\Debug\AquariumClient.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Student\Documents\GitHub\Colin-AIE-Term-Project\AquariumServer\Debug\AquariumClient.lib" /MACHINE:X86 Debug\AquariumClient.exe.embed.manifest.res
+         Debug\AquariumCreature.obj
+         Debug\AquariumGameState.obj
+         Debug\AquariumRakNet.obj
+         Debug\AquariumVector2.obj
          Debug\BitStream.obj
          Debug\CCRakNetUDT.obj
          Debug\CheckSum.obj
@@ -94,10 +132,6 @@
          Debug\VariadicSQLParser.obj
          Debug\WSAStartupSingleton.obj
          Debug\_FindFirst.obj
-         Debug\AquariumCreature.obj
-         Debug\AquariumGameState.obj
-         Debug\AquariumRakNet.obj
-         Debug\AquariumVector2.obj
          Debug\AquariumClient.obj
        Manifest:
          C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\AquariumClient.exe.embed.manifest" /manifest Debug\AquariumClient.exe.intermediate.manifest
@@ -112,4 +146,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.31
+Time Elapsed 00:00:02.00

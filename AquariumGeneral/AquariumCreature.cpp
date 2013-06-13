@@ -8,15 +8,14 @@
 
 // Preprocessor declarations
 #include "AquariumCreature.h"
+#include "AquariumVector2.h"
 
 // Class constructor
 AquariumCreature::AquariumCreature()
 {
 	// Assign all values to default
-	xpos = 0;
-	ypos = 0;
-	prevxpos = 0;
-	prevypos = 0;
+	position.Set(0.0, 0.0);
+	prev_position.Set(0.0, 0.0);
 	rotation = 0;
 }
 
@@ -24,56 +23,54 @@ AquariumCreature::AquariumCreature()
 void AquariumCreature::SetPos(int x, int y)
 {
 	// Set previous position
-	prevxpos = xpos;
-	prevypos = ypos;
+	prev_position = position;
 
 	// Set x and y position to arguments
-	xpos = x;
-	ypos = y;
+	position.Set(x, y);
 }
 
 // Assigns x and y arguments to current position
 void AquariumCreature::GetPos(int *x, int *y)
 {
 	// Set x and y to x and y positions
-	*x = xpos;
-	*y = ypos;
+	*x = position.X;
+	*y = position.Y;
 }
 
 // Returns x position
 int AquariumCreature::GetXPos(void)
 {
 	// Return x position
-	return xpos;
+	return position.X;
 }
 
 // Returns y position
 int AquariumCreature::GetYPos(void)
 {
 	// Return y position
-	return ypos;
+	return position.Y;
 }
 
 // Assigns x and y arguments to previous position
 void AquariumCreature::GetPrevPos(int *x, int *y)
 {
 	// Assign x and y arguments
-	*x = prevxpos;
-	*y = prevypos;
+	*x = prev_position.X;
+	*y = prev_position.Y;
 }
 
 // Returns previous x position
 int AquariumCreature::GetPrevXPos(void)
 {
 	// Return previous x position
-	return prevxpos;
+	return prev_position.X;
 }
 
 // Returns previous y position
 int AquariumCreature::GetPrevYPos(void)
 {
 	// Return previous y position
-	return prevypos;
+	return prev_position.Y;
 }
 
 // Returns total number of verticies in the model
@@ -114,10 +111,8 @@ AquariumCreature::~AquariumCreature()
 LittleFish::LittleFish()
 {
 	// Assign all values to default
-	xpos = 0;
-	ypos = 0;
-	prevxpos = 0;
-	prevypos = 0;
+	position.Set(0.0, 0.0);
+	prev_position.Set(0.0, 0.0);
 	rotation = 0;
 	total_verticies = LittleFishTotalVerticies;
 
@@ -149,10 +144,8 @@ LittleFish::~LittleFish()
 BigFish::BigFish()
 {
 	// Assign all values to default
-	xpos = 0;
-	ypos = 0;
-	prevxpos = 0;
-	prevypos = 0;
+	position.Set(0.0, 0.0);
+	prev_position.Set(0.0, 0.0);
 	rotation = 0;
 	total_verticies = BigFishTotalVerticies;
 
